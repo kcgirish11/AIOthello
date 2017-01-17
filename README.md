@@ -1,1 +1,2 @@
 # AIOthello
+# Parallel
