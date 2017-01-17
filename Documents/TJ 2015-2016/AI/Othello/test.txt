@@ -1,0 +1,144 @@
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+IM HERE in baserandom
+[(-3, 25), (-3, 42), (-3, 44)]
+[(-3, 9), (-3, 10), (-3, 17), (-3, 20), (-3, 21), (-3, 25), (-3, 29)]
+[(-3, 42), (-3, 44), (-3, 29)]
+[(-3, 14), (-3, 17), (-3, 18), (-3, 20), (-3, 25), (-3, 29)]
+[(-3, 24), (-3, 42), (-3, 44)]
+[(-3, 17), (-3, 18), (-3, 20), (-3, 21), (-3, 22), (-3, 25), (-3, 30)]
+[((-3, 25), 17), ((-3, 9), 18), ((-3, 29), 20), ((-3, 14), 21), ((-3, 24), 25), ((-3, 17), 29)]
+[(-3, 50), (-3, 43), (-3, 20), (-3, 29)]
+[(-3, 25), (-3, 49), (-3, 44)]
+[(-3, 45), (-3, 53), (-3, 21), (-3, 29), (-3, 37)]
+[((-3, 20), 49), ((-3, 25), 26), ((-3, 21), 44)]
+[(-3, 26), (-3, 42), (-3, 52)]
+[(-3, 12), (-3, 13), (-3, 52), (-3, 53), (-3, 21), (-3, 29)]
+[(-3, 26), (-3, 20)]
+[(-3, 52), (-3, 53), (-3, 20), (-3, 21), (-3, 22), (-3, 30)]
+[(-3, 26), (-3, 42), (-3, 60)]
+[((-3, 26), 53), ((-3, 12), 20), ((-3, 20), 21), ((-3, 20), 29), ((-3, 26), 52)]
+[(((-3, 9), 18), 26), (((-3, 20), 49), 42), (((-3, 12), 20), 44)]
+42
+37
