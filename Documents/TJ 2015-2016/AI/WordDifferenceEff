@@ -1,0 +1,110 @@
+import sys
+fileLoc = sys.argv[0] + "//../words.txt"
+wordCounter = 0
+vertList = open(fileLoc, "r").read().splitLines()
+def wordCount():
+	return len(vertList)
+
+
+def relatedWords(word): 
+	neighList = []
+	for pos in word:
+		for letter in ascii_lowercase:  
+			neighbor = (word[:pos] + letter + word[pos + 1:])
+			if neighbor in vertList: 
+				neighList.append(neighbor)
+	return neighList; 
+
+
+wordNeighborsDict = {}
+for word in vertList:
+	neighbors = relatedWords(word)
+	wordNeighborsDict[word] = neighbors
+
+print format(wordCount())
+
+# mostNeighborsDict = {}
+# def getNeighbors(word):
+# 	if word in wordNeighborsDict:
+# 		neighCount = 0
+# 		for i in wordNeighborsDict[word]:
+# 			neighCount += 1
+# 		return neighCount
+
+# def getTotalEdges():
+# 	edgeCount = 0
+# 	for word in wordNeighborsDict:
+# 		for i in wordNeighborsDict[word]:
+# 			edgeCount += 1
+# 	return edgeCount/2
+
+# components = []
+# def breadthFirstSearch (): 
+# 	queue = []
+# 	checked = []
+# 	for word in vertList:
+# 		if word not in checked:
+# 			checked.append(word)
+# 			components.append([])
+# 			components[len(components)-1].append(word)
+# 			for i in wordNeighborsDict[word]:
+# 				queue.append(i)
+# 			while queue:
+# 				curword = queue.pop(0)
+# 				if curword not in checked:
+# 					components[len(components)-1].append(curword)
+# 					for k in wordNeighborsDict[curword]:
+# 						queue.append(k)
+# 					checked.append(curword)
+
+
+# def largestComponent():
+# 	size = 0
+# 	for i in components:
+# 		if(len(i) > size):
+# 			size = len(i)
+# 	return size
+
+# componentsSizeDict = {} #key is the size, value is the number of components
+# def componentSize():
+# 	for i in components:
+# 		if(len(i) in componentsSizeDict.keys()):
+# 			componentsSizeDict[len(i)] += 1
+# 		else: 
+# 			componentsSizeDict[len(i)] = 1
+
+
+# def mostNeighbors(): 
+# 	mostNeighbors = 0
+# 	mostWord = ""
+# 	for i in vertList:
+# 		if(getNeighbors(i) > mostNeighbors):
+# 			mostNeighbors = getNeighbors(i)
+# 			mostWord = i
+# 	return mostWord + " has the most neighbors with " + str(mostNeighbors)
+
+    
+
+# print str(wordCount()) + " words in words.txt"
+# #print getNeighbors(sys.argv[1]) + " neighbors of" + sys.argv[1]
+# print str(getTotalEdges()) + " total edges!"
+# breadthFirstSearch()
+# print str(len(components)) + " components"
+# print str(largestComponent()) + " size of the largest component"
+# componentSize()
+# for size in componentsSizeDict:
+# 	print "Size: " + str(size) + "    # of components: " + str(componentsSizeDict[size])
+# print mostNeighbors()
+
+
+
+
+
+
+
+
+
+
+
+
+

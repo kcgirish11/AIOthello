@@ -1,0 +1,66 @@
+import numpy as np
+import cv2, sys, re, math
+import urllib.request
+from fractions import Fraction
+
+
+def hough_transform(img_bin, theta_res=1, rho_res=1):
+  nR,nC = img_bin.shape
+  theta = N.linspace(-90.0, 0.0, N.ceil(90.0/theta_res) + 1.0)
+  theta = N.concatenate((theta, -theta[len(theta)-2::-1]))
+ 
+  D = N.sqrt((nR - 1)**2 + (nC - 1)**2)
+  q = N.ceil(D/rho_res)
+  nrho = 2*q + 1
+  rho = N.linspace(-q*rho_res, q*rho_res, nrho)
+  H = N.zeros((len(rho), len(theta)))
+  for rowIdx in range(nR):
+    for colIdx in range(nC):
+      if img_bin[rowIdx, colIdx]:
+        for thIdx in range(len(theta)):
+          rhoVal = colIdx*N.cos(theta[thIdx]*N.pi/180.0) + \
+              rowIdx*N.sin(theta[thIdx]*N.pi/180)
+          rhoIdx = N.nonzero(N.abs(rho-rhoVal) == N.min(N.abs(rho-rhoVal)))[0]
+          H[rhoIdx[0], thIdx] += 1
+  return rho, theta, H
+
+
+url = "https://www.krispykreme.com/SharedContent/User/aa/aa0ef72f-77be-4fef-8d43-bca50c530085.png"
+
+if len(sys.argv)>1:
+    url = sys.argv[1]
+if re.compile("^\\w*\\:\\/\\/").search(url) is None:
+  img = cv2.imread(url, cv2.IMREAD_COLOR)
+
+else:
+  resp = urllib.request.urlopen(url)
+  img = np.asarray(bytearray(resp.read()), dtype = "uint8")
+  img = cv2.imdecode(img, cv2.IMREAD_COLOR)
+
+# Allows window to be resized by user (in theory)
+cv2.namedWindow('imgWnd', cv2.WINDOW_NORMAL)
+height, width = img.shape[:2]    # Get image dimensions
+widthMax = 1024                  # The screen width, in pixels
+
+if (width > widthMax):
+  cv2.resizeWindow('imgWnd', widthMax, int(height*widthMax/width))
+#cv2.imshow("Edge", img)
+Edges = cv2.cvtColor(255-cv2.Canny(img.copy(), 100, 200),cv2.COLOR_GRAY2RGB)
+Circle = np.copy(Edges)
+#drawline(Edges,img, 10, 10)
+
+gx = np.array([[-1,0,1], [-2,0,2], [-1,0,1]])
+gy = np.array([[-1,-2,-1],[0,0,0],[1,2,1]])
+#print(image)
+blur = 255-(cv2.cvtColor(cv2.GaussianBlur(img.copy(),(7,7),0), cv2.COLOR_BGR2GRAY))
+#print(gray)
+Gx = cv2.filter2D(1.0*blur, -1, gx)
+Gy = cv2.filter2D(1.0*blur, -1, gy)
+#image = Gx*Gx +Gy*Gy
+cv2.imshow("Canny2", Edges)
+cv2.imshow("original", img)
+Transpose, Huff = drawCircles(findCircles(Edges,Gx, Gy), img)
+cv2.imshow("Edge", Huff)
+cv2.imshow("Transpose", Transpose)
+cv2.waitKey(0)
+cv2.destroyAllWindows()

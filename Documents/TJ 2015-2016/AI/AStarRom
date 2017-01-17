@@ -1,0 +1,5 @@
+cityList = set(open("romFullNames.txt", "r").read().splitlines())
+letter2city = {}
+for c in cityList: 
+	letter2city[c[0]] = c
+	print c[0]
